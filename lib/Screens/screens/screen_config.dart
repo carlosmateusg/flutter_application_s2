@@ -1,7 +1,15 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 
 class ScreenConfig extends StatelessWidget{
-  ScreenConfig({Key? key});
+  // ignore: non_constant_identifier_names, avoid_types_as_parameter_names
+  const ScreenConfig({super.key, Key? });
+  
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
 }
 
 final List<String> items = [
@@ -45,4 +53,8 @@ floatingActionButton: FloatingActionButton(
   onPressed: (){},
 ),
 );
+}
+
+extension on String {
+  String get message => null;
 }
